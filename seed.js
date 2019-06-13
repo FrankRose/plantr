@@ -52,7 +52,8 @@ const chalk = require('chalk');
 
     const [north, south, east, west, midwest, northeast] = plots;
     const [bugs, daffy, porky] = gardeners;
-
+    console.log(Object.keys(north.__proto__));
+    // console.log(north);
     await Promise.all([
       north.setGardener(bugs),
       north.setVegetables(veggies.slice(2, 5)),
